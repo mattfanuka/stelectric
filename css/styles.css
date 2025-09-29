@@ -588,6 +588,8 @@ body.no-scroll {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
     justify-content: space-evenly;
     text-align: center;
     transition: transform 0.3s ease;
@@ -2046,3 +2048,4 @@ body.no-scroll {
     }
 
 }
+
