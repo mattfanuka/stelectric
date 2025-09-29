@@ -575,7 +575,7 @@ body.no-scroll {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     max-width: 1200px;
     margin: auto;
     gap: 0.5rem;
@@ -1888,6 +1888,14 @@ body.no-scroll {
     .indser-text-container ul {
         width: 80%;
     }
+
+    .service-grid-container {
+        padding: 1rem;
+    }
+
+    .service-grid {
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -2046,6 +2054,4 @@ body.no-scroll {
     .footer-link {
         width: 35%;
     }
-
 }
-
