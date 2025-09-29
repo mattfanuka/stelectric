@@ -580,6 +580,7 @@ body.no-scroll {
     margin: auto;
     gap: 0.5rem;
     padding: 1rem;
+    place-items: center;
 }
 
 .index-service-card {
@@ -2043,4 +2044,5 @@ body.no-scroll {
     .footer-link {
         width: 35%;
     }
+
 }
