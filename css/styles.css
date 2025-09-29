@@ -1891,10 +1891,15 @@ body.no-scroll {
 
     .service-grid-container {
         padding: 1rem;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
 
     .service-grid {
         padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -2054,4 +2059,5 @@ body.no-scroll {
     .footer-link {
         width: 35%;
     }
+
 }
