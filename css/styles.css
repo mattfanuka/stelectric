@@ -73,14 +73,25 @@ a.cta {
 } 
 
 .ghost-btn.white {
-    border: 2px solid var(--off-white);
+    border: 2px solid var(--cta2);
     border-radius: 4px;
-    color: var(--off-white);
+    color: var(--cta2);
 }
 
 .ghost-btn.white:hover {
     background: var(--off-white);
     color: var(--text-color);
+}
+
+.ghost-btn.theme {
+    border: 2px solid var(--cta2);
+    border-radius: 4px;
+    color: var(--cta2);
+}
+
+.ghost-btn.theme:hover {
+    background: var(--cta2);
+    color: var(--off-white);
 }
 
 .selected {
@@ -335,6 +346,7 @@ body.no-scroll {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0 3px 15px 0 #68686846;
 }
 
 .contact2 {
@@ -1085,7 +1097,7 @@ body.no-scroll {
     height: 400px;
     
 }
-.content-holder {
+.content-holder2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1131,18 +1143,6 @@ body.no-scroll {
 .about-img-1, .about-img-2 {
     height: 400px;
     border-radius: 15px;
-}
-
-.content-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-item img {
-    height: 100px;
-    width: 100px
 }
 
 /* ------ SERVICES PAGE ------- */
@@ -1248,6 +1248,7 @@ body.no-scroll {
 .container-top {
     background-color:#ececec;
 }
+
 .content-holder {
     display: flex;
     justify-content: space-evenly;
@@ -1738,9 +1739,15 @@ body.no-scroll {
 @media screen and (max-width: 700px) {
     .content-holder {
         flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
     }
 
-    .container-bottom > .content-holder {
+    .content-holder2 {
+        flex-direction: column-reverse;
+    }
+
+    .container-bottom > .content-holder:nth-child(1) {
         flex-direction: column-reverse;
     }
 
@@ -1887,6 +1894,10 @@ body.no-scroll {
 
     .indser-text-container ul {
         width: 80%;
+    }
+
+    .content-holder {
+        padding: 0.75rem;
     }
 
     .service-grid-container {
@@ -2059,5 +2070,4 @@ body.no-scroll {
     .footer-link {
         width: 35%;
     }
-
 }
