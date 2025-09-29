@@ -73,9 +73,9 @@ a.cta {
 } 
 
 .ghost-btn.white {
-    border: 2px solid var(--cta2);
+    border: 2px solid var(--off-white);
     border-radius: 4px;
-    color: var(--cta2);
+    color: var(--off-white);
 }
 
 .ghost-btn.white:hover {
@@ -230,6 +230,7 @@ body.no-scroll {
     position: relative;
     top: -2px;
     content: " ▶";
+    font-family: var(--copy-font);
     font-size: 0.7rem;
     margin-left: 4px;
     display: inline-block;  
@@ -468,6 +469,12 @@ body.no-scroll {
 
 .service-icon {
     height: clamp(60px, 5vw, 100px);
+}
+
+.service-icon img {
+    height: 100%;
+    width: auto;
+    display: block;
 }
 
 .service-name {
