@@ -1501,6 +1501,24 @@ body.no-scroll {
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .dropdown > a::after {
+    content: "";
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown:hover > a::after {
+    transform: rotate(45deg);
+    color: var(--cta2);
+}
+}
+
 @media screen and (max-width: 1080px) {
     .header-center .img-wrapper {
         display: none;
