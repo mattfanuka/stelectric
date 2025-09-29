@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>S.T. Electric Inc. | South Jersey's No. 1 Electric Company</title>
+</head>
+<body>
+    <header>
+        <div class="header2">
+            <div class="header-left">
+                <div class="logo img-wrapper">
+                    <a href='../index.html'><img src="../img/logo.svg"></a>
+                </div>
+            </div>
+            <nav>
+                <div class="header-right">
+                    <a href="../index.html" class="link large">HOME</a>
+                        <div class="dropdown">
+                            <a href="./services.html" class="link large">SERVICES</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="./services/electrical.html">Electrical</a></li>
+                            <li><a href="./services/lighting.html">Lighting</a></li>
+                            <li><a href="./services/signs.html">Signs</a></li>
+                            <li><a href="./services/video-boards.html">Video Boards</a></li>
+                            <li><a href="./services/surveys.html">Surveys & Permits</a></li>
+                            <li><a href="./services/other-services.html">Other Services</a></li>
+                            </ul>
+                        </div>
+                    <a href="./about.html" class="link selected large">ABOUT</a>
+                    <a href="./gallery.html" class="link large">GALLERY</a>
+                    <a href="../index.html#contact" class="contact2 large">SERVICE REQUEST</a>
+
+                    <div class="hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            
+                    <div class="mobile-nav" id="mobileNav">
+                        <div class="nav-links">
+                            <a class="link" href="../index.html">HOME</a>
+                            <div class="dropdown">
+                                <a class="mobile-service">SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./services.html">All Services</a></li>
+                                    <li><a href="./services/electrical.html">Electrical</a></li>
+                                    <li><a href="./services/lighting.html">Lighting</a></li>
+                                    <li><a href="./services/signs.html">Signs</a></li>
+                                    <li><a href="./services/video-boards.html">Video Boards</a></li>
+                                    <li><a href="./services/surveys.html">Surveys & Permits</a></li>
+                                    <li><a href="./services/other-services.html">Other Services</a></li>
+                                </ul>
+                            </div>
+                            <a href="./about.html" class="link" >ABOUT</a>
+                            <a href="./gallery.html" class="link selected" >GALLERY</a>
+                            <a href="../index.html#contact" class="contact cta">SERVICE REQUEST</a>
+                        </div>
+                        <div class="grey">
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="gallery-page">
+        <h1>OUR WORK</h1>
+        <div class="collage">
+            <img id="0" src="https://picsum.photos/1342/1578" data-title="TITLE" alt="gfdsg"/>
+            <img id="1" src="https://picsum.photos/1498/1453" data-title="TITLE1" alt="fdsafdsaf"/>
+            <img id="2" src="https://picsum.photos/1217/1523" data-title="TITLE3" alt="fdsafdsaf"/>
+            <img id="3" src="https://picsum.photos/1583/1402" data-title="TITLE4" alt="hfdgfasdfsd"/>
+            <img id="4" src="https://picsum.photos/1456/1534" data-title="TITLE5" alt=""/>
+            <img id="5" src="https://picsum.photos/1265/1352" data-title="TITLE" alt=""/>
+            <img id="6" src="https://picsum.photos/1320/1486" data-title="TITLE" alt=""/>
+            <img id="7" src="https://picsum.photos/1531/1214" data-title="TITLE" alt=""/>
+            <img id="8" src="https://picsum.photos/1470/1569" data-title="TITLE" alt=""/>
+            <img id="9" src="https://picsum.photos/1594/1375" data-title="TITLE" alt=""/>
+            <img id="10" src="https://picsum.photos/1248/1429" data-title="TITLE" alt=""/>
+            <img id="11" src="https://picsum.photos/1503/1497" data-title="TITLE" alt=""/>
+            <img id="12" src="https://picsum.photos/1367/1550" data-title="TITLE" alt=""/>
+            <img id="13" src="https://picsum.photos/1422/1276" data-title="TITLE" alt=""/>
+            <img id="14" src="https://picsum.photos/1510/1432" data-title="TITLE" alt=""/>
+            <img id="15" src="https://picsum.photos/1515/1431" data-title="TITLE" alt=""/>
+            <img id="16" src="https://picsum.photos/1545/1421" data-title="TITLE" alt=""/>
+            <img id="17" src="https://picsum.photos/1215/1425" data-title="TITLE" alt=""/>
+        </div>
+
+        <div class="modal" id="imageModal">
+            <div class="modal-content">
+                <button onclick="closeModal()" class="close-btn">&times;</button>
+                <button class="modal-nav-btn modal-prev-btn" data-shift="-1">&#8249;</button>
+                <button class="modal-nav-btn modal-next-btn" data-shift="1">&#8250;</button>
+                <div class="modal-counter">
+                    <span id="currentIndex">1</span> / <span id="totalImages">6</span>
+                </div>
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <div class="modal-title" id="modalTitle">Image Title</div>
+                    <div class="modal-description" id="modalDescription">Image description and details go here.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-holder">
+            <div class="footer-top-grid">
+                <div class="img-wrapper footer-logo">
+                    <img src="../img/logo-dark.svg">
+                </div>
+                <div class="footer-info">
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="../img/map-icon.svg">
+                        </div>
+                        <p>Serving South Jersey and Philadelphia Areas</p>
+                    </span>
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="../img/phone-footer-icon.svg">
+                        </div>
+                        <p><a href="tel:856-616-1231">(856) 616-1231</a></p>
+                    </span>
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="../img/phone-footer-icon.svg">
+                        </div>
+                        <p><a href="tel:856-383-1400">EMERGENCY LINE: (856) 383-1400</a></p>
+                    </span>
+                </div>
+                <div class="footer-services">
+                    <h4>SERVICES</h4>
+                    <ul class="footer-services-list">
+                        <li><a href="./services/electrical.html">Electrical</a></li>
+                        <li><a href="./services/lighting.html">Lighting</a></li>
+                        <li><a href="./services/signs.html">Signs</a></li>
+                        <li><a href="./services/video-boards.html">Video Board Services</a></li>
+                        <li><a href="./services/surveys.html">Surveys & Permits</a></li>
+                        <li><a href="./services/other-services.html">Other Specialty Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-browse">
+                    <h4>BROWSE</h4>
+                    <ul class="footer-browse-list">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="../index.html#contact" class="footer-book">GET IN TOUCH</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-site-info">
+                    <p>&#169; S.T. Electric, Inc. <span class='copyright-year'>2025</span> | Website by <a href="https://cherryhillwebdev.com/index.html">Cherry Hill Web Dev</a></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
